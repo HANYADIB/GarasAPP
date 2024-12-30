@@ -90,14 +90,14 @@ app.UseCors("CorsApi");
 //            options.WithOrigins("*").
 //            AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
-using (var scope = app.Services.CreateScope())
-{
-    var dbContext = scope.ServiceProvider
-        .GetRequiredService<ApplicationDbContext>();
+//using(var scope = app.Services.CreateScope())
+//{
+//    var dbContext = scope.ServiceProvider
+//        .GetRequiredService<ApplicationDbContext>();
 
-    // Here is the migration executed
-    dbContext.Database.Migrate();
-}
+//    // Here is the migration executed
+//    dbContext.Database.Migrate();
+//}
 
 
 // Configure the HTTP request pipeline.
